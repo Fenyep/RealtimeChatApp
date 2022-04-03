@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Chat App | Eureka Code</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome link should be placed here for icons use-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="logo">
+                <i class="far fa-comment-alt"></i>
+                <h3>Eureka | Code chat app</h3>
+            </div>
+            <p id="your-name">Your Name</p>
+        </div>
+        <!-- ----------------------------- -->
+        <div class="chat-section">
+            <div class="main-wrapper">
+                <div class="chat-content">
+                    <div class="message">
+                        <div class="message-row other-message">
+                            <!-- <div class="message-title">
+                                <span>Fenyep</span>
+                            </div>
+                            <div class="message-text">
+                                Hello
+                            </div>
+                            <div class="message-time">
+                                April 20
+                            </div> -->
+                        </div>
+                        <div class="message-row you-message">
+                            <!-- <div class="message-title">
+                                <span>User1</span>
+                            </div>
+                            <div class="message-text">
+                                ok
+                            </div>
+                            <div class="message-time">
+                                April 20
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------------- -->
+                <form class="msg-tex">
+                    <input type="text" name="msg" id="msg" placeholder="Type Message Here...." autocomplete="off">
+                    <button id="btn-send">
+                        <i class="fa fa-paper-plane"> Envoyer</i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
